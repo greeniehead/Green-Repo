@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=jdocPractice()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ jdocPractice\r\n
+comment1.params=y
+comment1.target=int\ sampleMethod(int)
+comment1.text=\r\n\ This\ right\ here\ is\ a\ freakin\ test\r\n\ \r\n\ @param\ \ x\ \ \ woah\ would\ ya\ look\ at\ that,\ its\ a\ variable\r\n\ @param\ \ y\ \ \ oh\ damn\ we\ got\ ourselves\ another\ variable\r\n\ @return\ \ \ \ \ woah,\ slow\ down\ here,\ we\ got\ something\ that\ does\ stuff\ with\ BOTH\ variables\ \r\n
+numComments=2
