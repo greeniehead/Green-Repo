@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class board
+public class withRulesV1
 {
     public static void main(String[] args)
     {
@@ -12,7 +12,7 @@ public class board
         
         String[][] board = new String[8][8];
         boolean end = true;
-        for(int row = 7; row > -1; row--)
+        for(int row = 7; row > -1; row--)//filling board with spaces
         {
             for(int col = 0; col < 8; col++)
             {
@@ -22,6 +22,7 @@ public class board
                 }
             }
         }
+        //initializing start of game
         board[0][0] = "WR";
         board[0][1] = "WH";
         board[0][2] = "WB";
@@ -55,7 +56,7 @@ public class board
         board[6][5] = "BP";
         board[6][6] = "BP";
         board[6][7] = "BP";
-        for(int row = 7; row > -1; row--)
+        for(int row = 7; row > -1; row--) //first board print out
         {
             System.out.print((row+1) + "  ");
             for(int col = 0; col < 8; col++)
@@ -66,17 +67,19 @@ public class board
         }
         System.out.println("   A  B  C  D  E  F  G  H");
         
-        while(end)
+        while(end)//the entire game runs through this loop
         {
+            //white turn start
             whiteTurns++;
+            //piece selection
             int whitePieceRow = 0;
             int whitePieceCol = 0;
-            while(whiteTF)
+            while(whiteTF) //changing a letter into a number as well as checking that it is the correct piece
             {
                 System.out.println("White player's turn.  Enter the row then column of the piece you wish to move.");
                 whitePieceRow = keyboard.nextInt()-1;
                 String whitePieceColLet = keyboard.next();
-                if(whitePieceColLet == "A")
+                if(whitePieceColLet == "A") // letter to number
                 {
                     whitePieceCol = 0;
                 }
@@ -108,7 +111,7 @@ public class board
                 {
                     whitePieceCol = 7;
                 }
-                if(board[whitePieceRow][whitePieceCol].substring(0,1) == "W")
+                if((board[whitePieceRow][whitePieceCol]).substring(0,1) == "W")//correct piece
                 {
                     whiteTF = false;
                 }
@@ -119,11 +122,12 @@ public class board
             }
             boolean whiteTf = true;
             
+            //move selection
             System.out.println("Enter the row and column of the place you wish to move it.");
             int whiteMoveRow = keyboard.nextInt()-1;
             String whiteMoveColLet = keyboard.next();
             int whiteMoveCol = 0;
-            if(whiteMoveColLet == "A")
+            if(whiteMoveColLet == "A")//letter to number
             {
                  whiteMoveCol = 0;
             }
@@ -157,9 +161,9 @@ public class board
             }
             
             board[whiteMoveRow][whiteMoveCol] = board[whitePieceRow][whitePieceCol];
-            board[whitePieceRow][whitePieceCol] = "  ";
+            board[whitePieceRow][whitePieceCol] = "  ";//replacing the square the piece moved from
             
-            for(int row = 7; row > -1; row--)
+            for(int row = 7; row > -1; row--)//after white turn print out
             {
                 System.out.print((row+1) + "  ");
                 for(int col = 0; col < 8; col++)
@@ -170,14 +174,17 @@ public class board
             }
             System.out.println("   A  B  C  D  E  F  G  H");
             
-            System.out.println(whiteTurns + " : " + blackTurns);
+            System.out.println(whiteTurns + " : " + blackTurns); //turn print out
             
+            //white turn end and black turn start
+            //the black turn does not currently have the code for determining if the selected piece is correct
+            //I will add that code when I have it working for one player
             blackTurns++;
             System.out.println("Black player's turn.  Enter the row then column of the piece you wish to move.");
             int blackPieceRow = keyboard.nextInt()-1;
             String blackPieceColLet = keyboard.next();
             int blackPieceCol = 0;
-            if(blackPieceColLet == "A")
+            if(blackPieceColLet == "A")//letter to number
             {
                 blackPieceCol = 0;
             }
@@ -215,7 +222,7 @@ public class board
             String blackMoveColLet = keyboard.next();
             int blackMoveCol = 0;
             
-            if(blackMoveColLet == "A")
+            if(blackMoveColLet == "A")//letter to number
             {
                 blackMoveCol = 0;
             }
@@ -249,9 +256,9 @@ public class board
             }
             
             board[blackMoveRow][blackMoveCol] = board[blackPieceRow][blackPieceCol];
-            board[blackPieceRow][blackPieceCol] = "  ";
+            board[blackPieceRow][blackPieceCol] = "  "; //replacing the square the piece moved from
             
-            for(int row = 7; row > -1; row--)
+            for(int row = 7; row > -1; row--)//after black turn print out
             {
                 System.out.print((row+1) + "  ");
                 for(int col = 0; col < 8; col++)
@@ -262,7 +269,8 @@ public class board
             }
             System.out.println("   A  B  C  D  E  F  G  H");
             
-            System.out.println(whiteTurns + " : " + blackTurns);
+            System.out.println(whiteTurns + " : " + blackTurns); //turn counter
+            //end of black turn and start of another white turn
         }
     }
 }
