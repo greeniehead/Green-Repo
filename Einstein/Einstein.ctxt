@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=mass
+comment0.target=double\ calcEnergy(double)
+comment0.text=\r\n\ calcEnergy\ \ --\ given\ a\ mass,\ calculates\ the\ engergy\ using\ the\ famous\ formula\r\n\ \r\n\ @param\ \ mass\ \ \ mass\ to\ calculate\ the\ energy\ of.\r\n\ @return\ \ \ \ \ \ \ \ the\ energy\ of\ the\ provided\ mass\ \r\n
+comment1.params=
+comment1.target=java.lang.String\ wordsOfWisdom()
+comment1.text=\r\n\ wordsOfWisdom\ \ --\ returns\ a\ random\ quote\ from\ QUOTES.\r\n\ \r\n\ @return\ \ Random\ Einstein\ quote.\r\n
+numComments=2

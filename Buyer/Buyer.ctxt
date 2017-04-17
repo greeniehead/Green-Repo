@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Buyer()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Buyer\r\n\ zero-arg\ constructor\r\n
+comment1.params=name\ state\ salesTaxRate\ mostRecentBuyMonth
+comment1.target=Buyer(java.lang.String,\ java.lang.String,\ double,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Buyer\r\n\ four-arg\ constructor\r\n
+comment2.params=
+comment2.target=double\ getSalesTaxRate()
+comment2.text=\r\n\ get\ salesTaxRate\r\n
+comment3.params=salesTaxRate
+comment3.target=void\ setSalesTaxRate(double)
+comment3.text=\r\n\ set\ salesTaxRate\r\n\ \r\n\ Check\ to\ see\ if\ 0\ <\ argument\ <\=\ MAX_TAX_RATE.\r\n\ If\ it\ is,\ update.\ \ \ If\ not,\ print\ a\ Warning\ and\ leave\ it\ unchanged.\r\n
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment4.text=\r\n\ get\ name\r\n\ \r\n\ Get\ name,\ but\ only\ print\ the\ first\ three\ characters,\ then\r\n\ mask\ with\ asterisks\r\n
+comment5.params=name
+comment5.target=void\ setName(java.lang.String)
+comment5.text=\r\n\ set\ name\r\n\ \r\n\ limit\ name\ to\ 50\ characters.\r\n
+comment6.params=
+comment6.target=java.lang.String\ getState()
+comment7.params=newState
+comment7.target=void\ setState(java.lang.String)
+numComments=8

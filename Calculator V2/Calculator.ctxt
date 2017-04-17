@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Calculator()
+comment1.params=add1\ add2
+comment1.target=double\ add(double,\ double)
+comment2.params=sub1\ sub2
+comment2.target=double\ subtract(double,\ double)
+comment3.params=mult1\ mult2
+comment3.target=double\ multiply(double,\ double)
+comment4.params=div1\ div2
+comment4.target=double\ divide(double,\ double)
+comment5.params=expNum\ power
+comment5.target=double\ exponent(double,\ int)
+numComments=6
