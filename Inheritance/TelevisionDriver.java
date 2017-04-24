@@ -15,7 +15,7 @@ public class TelevisionDriver
         LED led1 = new LED();
         System.out.println(led1);
         
-        LED led2 = new LED("LED Bronze", 199.99, 500);
+        LED led2 = new LED("LED Bronze", 199.99);
         System.out.println(led2 + "\n");
         
         System.out.println("CRT televisions");

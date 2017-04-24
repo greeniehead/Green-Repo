@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyComputer()
+comment1.params=memory\ color\ RAM\ graphicsCard
+comment1.target=MyComputer(int,\ java.lang.String,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getGraphics()
+comment3.params=newGraphicsCard
+comment3.target=void\ setGraphics(java.lang.String)
+comment4.params=
+comment4.target=int\ getRAM()
+comment5.params=newRAM
+comment5.target=void\ setRAM(int)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
