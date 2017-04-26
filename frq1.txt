@@ -1,0 +1,39 @@
+public class LogMessage
+{
+	private String machineId;
+	private String description;
+	
+	public LogMessage(String message)
+	{
+	 int index = message.indexOf(":");
+	 machineId = message.substring(0, index);
+	 description = message.substring(index+1, message.length());
+	}
+	
+	public boolean containsWord(String keyword)
+	{
+	 boolean tf = false;
+	 if(description.equals(keyword))
+	 {
+	   tf = true;
+	 }
+	 if(description.indexOf(keyword + " ") == 0)
+	 {
+	  if()
+	  {
+	   tf = true;
+	  }
+	 }
+	 return tf;
+	}
+	
+	public String getMachineId()
+	{
+	 return this.machineId;
+	}
+	
+	public String getDescription()
+	{
+	 return this.description;
+	}
+}

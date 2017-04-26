@@ -6,10 +6,21 @@ public class AsteroidMan extends SuperHero
         this.setCape(false);
     }
     
+    public String getName()
+    {
+        String output = "Asteroid Man";
+        return output;
+    }
+    
     public String motto()
     {
         String output = "Something to do with Asteroids!";
         return output;
+    }
+    
+    public String giveName()
+    {
+        return this.getName();
     }
     
     public String toString()

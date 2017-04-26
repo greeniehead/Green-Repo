@@ -6,10 +6,21 @@ public class MyChoice extends SuperHero
         this.setCape(true);
     }
     
+    public String getName()
+    {
+        String output = "My Choice Man";
+        return output;
+    }
+    
     public String motto()
     {
         String output = "Something to do with My Choice!";
         return output;
+    }
+    
+    public String giveName()
+    {
+        return this.getName();
     }
     
     public String toString()

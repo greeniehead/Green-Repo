@@ -6,10 +6,21 @@ public class FriedEggMan extends SuperHero
         this.setCape(true);
     }
     
+    public String getName()
+    {
+        String output = "Fried Egg Man";
+        return output;
+    }
+    
     public String motto()
     {
         String output = "Something to do with Eggs!";
         return output;
+    }
+    
+    public String giveName()
+    {
+        return this.getName();
     }
     
     public String toString()
