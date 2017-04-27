@@ -48,6 +48,10 @@ public class SuperHeroDriver
                         capedHeroes[row][col] = h;
                         heroes.remove(h);
                     }
+                    else
+                    {
+                        capedHeroes[row][col] = null;
+                    }
                 }
             }
         }
@@ -56,7 +60,14 @@ public class SuperHeroDriver
         {
             for(SuperHero s : row)
             {
-                System.out.print(s.giveName() + "\t");
+                if(s == null)
+                {
+                    System.out.print(null + "\t");
+                }
+                else
+                {
+                    System.out.print(s.getName() + "\t");
+                }
             }
             System.out.println("");
         }

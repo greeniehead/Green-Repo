@@ -18,11 +18,6 @@ public class FriedEggMan extends SuperHero
         return output;
     }
     
-    public String giveName()
-    {
-        return this.getName();
-    }
-    
     public String toString()
     {
         String output;
